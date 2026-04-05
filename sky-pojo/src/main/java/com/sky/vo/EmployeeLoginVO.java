@@ -11,10 +11,10 @@ import java.io.Serializable;
 
 @Data
 @Builder
-@NoArgsConstructor
-@AllArgsConstructor
+@NoArgsConstructor/*无参构造*/
+@AllArgsConstructor/*全参构造*/
 @ApiModel(description = "员工登录返回的数据格式")
-public class EmployeeLoginVO implements Serializable {
+public class EmployeeLoginVO/*这是给前端返回的对象*/ implements Serializable {
 
     @ApiModelProperty("主键值")
     private Long id;

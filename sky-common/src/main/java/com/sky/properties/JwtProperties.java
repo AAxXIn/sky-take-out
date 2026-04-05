@@ -5,6 +5,8 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;
 
 @Component
+/*将属性配置文件中的sky.jwt.*的值映射到
+ JwtProperties的adminSecretKey、adminTtl、adminTokenName三个属性中*/
 @ConfigurationProperties(prefix = "sky.jwt")
 @Data
 public class JwtProperties {
